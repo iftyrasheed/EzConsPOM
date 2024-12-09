@@ -29,7 +29,6 @@ public class BillPayPage extends BasePage{
     @FindBy(css = "button[class='btn btn btn-primary']")
     WebElement doneBtn;
     public void setBillPay(String num){
-        BillPayBtn.click();
 
         wait.until(ExpectedConditions.visibilityOf(dpdcCustomerNo)).click();
         dpdcCustomerNo.sendKeys(num);
